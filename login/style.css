@@ -22,16 +22,16 @@ body {
 
 main {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 105.5px 0;
     flex-wrap: wrap;
+    margin: 125px 0;
 }
 
 .login {
     background-color: white;
-    padding: 52px 50px;
-    height: 70.5vh;
+    padding: 82.2px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +47,7 @@ main {
 
 input {
     font: 500 16px 'IBM', sans-serif;
+    width: 300px;
     border: 0 none;
     outline: 0;
     border-bottom: 2px solid rgba(173, 173, 173, 0.364);
@@ -107,41 +108,37 @@ button:hover i {
     flex-direction: row;
 }
 
-.ou{
+.ou {
     padding: 0 10px;
     font: 500 16px 'IBM', sans-serif;
 }
 
-.mensagem{
+.mensagem {
     margin-top: 20px;
     font: 500 16px 'IBM', sans-serif;
 }
 
-a{
+a {
     font: 600 16px 'IBM', sans-serif;
     text-decoration: none;
     color: #865BDF;
 }
 
-.esquerdo{
+.esquerdo {
     background: linear-gradient(to bottom right, #7B6CEB, #AB6ED5, #EC769C);
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    width: 40%;
-    height: 70.5vh;
-    padding: 20px 0;
+    padding: 58px 0;
+    width: 70vh;
 }
 
-h1{
-    font: 600 40px 'IBMBold', sans-serif;
+h1 {
+    font: 600 36px 'IBMBold', sans-serif;
     color: white;
     text-align: center;
-    margin: 20px 0 30px 0;
+    margin: 10px 0 30px 0;
 }
 
-.texto, .aproveite{
+.texto,
+.aproveite {
     font: 500 17px 'IBM', sans-serif;
     color: white;
     line-height: 30px;
@@ -149,13 +146,37 @@ h1{
     padding: 0 8%;
 }
 
-.aproveite{
+.aproveite {
     text-align: center;
     margin-top: 10px;
 }
 
-img{
-    width: 120px;
+img {
+    width: 102px;
     margin-left: 20px;
 }
 
+.input-container {
+    position: relative;
+}
+
+.input-container i.fa-user,
+.input-container i.fa-key {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.input-container input.usuario,
+.input-container input.senha  {
+    padding-left: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .esquerdo {
+        margin-bottom: 70px;
+    }
+
+}

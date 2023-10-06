@@ -106,6 +106,7 @@ button:hover i {
 .divisor-div {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .ou {
@@ -116,6 +117,7 @@ button:hover i {
 .mensagem {
     margin-top: 20px;
     font: 500 16px 'IBM', sans-serif;
+    text-align: center;
 }
 
 a {
@@ -160,18 +162,40 @@ img {
     position: relative;
 }
 
-.input-container i.fa-user,
-.input-container i.fa-key {
+.input-container i {
     position: absolute;
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
 }
 
-.input-container input.usuario,
-.input-container input.senha  {
-    padding-left: 50px;
+.input-container input  {
+    padding-left: 40px;
 }
+
+
+/* PARTE DE CADASTRO */
+
+.cadastro {
+    background-color: white;
+    padding: 80px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botao{
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.botao i {
+    padding: 5px 7px;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -179,4 +203,7 @@ img {
         margin-bottom: 70px;
     }
 
+    .cadastro{
+        padding: 80px 40px;
+    }
 }

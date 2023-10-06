@@ -31,7 +31,7 @@ main {
 
 .login {
     background-color: white;
-    padding: 82.2px 50px;
+    padding: 81.7px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,7 +126,7 @@ a {
 
 .esquerdo {
     background: linear-gradient(to bottom right, #7B6CEB, #AB6ED5, #EC769C);
-    padding: 58px 0;
+    padding: 60px 0;
     width: 70vh;
 }
 

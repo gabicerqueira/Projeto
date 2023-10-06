@@ -184,18 +184,20 @@ img {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .botao{
-    padding: 5px 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    padding: 5px 8px;
 }
 
 .botao i {
     padding: 5px 7px;
 }
 
+.esquerdo-cadastre{
+    padding: 218.2px 0;
+}
 
 
 @media screen and (max-width: 768px) {

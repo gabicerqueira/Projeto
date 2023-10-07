@@ -188,15 +188,19 @@ img {
 }
 
 .botao{
-    padding: 5px 8px;
+    padding: 5px 15px;
 }
 
 .botao i {
-    padding: 5px 7px;
+    padding: 5px 6px;
 }
 
 .esquerdo-cadastre{
-    padding: 218.2px 0;
+    padding: 140px 0;
+}
+
+.esquerdo-cadastre h1{
+    margin-top: 0;
 }
 
 

@@ -1,0 +1,113 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'IBM';
+    src: url(fonts/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'IBMBold';
+    src: url(fonts/IBMPlexMono-Bold.ttf);
+}
+
+body {
+    background: linear-gradient(to bottom right, #6352EC, #865BDF, #B967C9);
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.tasks{
+    background-color: white;
+    padding: 5px;
+    margin-top: 50px;
+    border-radius: 10rem;
+}
+
+.titulo{
+    font: 500 20px 'IBMBold', sans-serif;
+    padding: 5px 10px;
+}
+
+.header i{
+    padding-right: 15px;
+}
+
+.user i{
+    font-size: 22px;
+}
+
+.user{
+    display: flex;
+}
+
+.hover{
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    transition: 0.2s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hover:hover{
+    background-color: #a198e9;
+}
+
+.menu{
+    margin: 30px 0 0 30px;
+}
+
+.titulo-user{
+    font: 500 20px 'IBM', sans-serif;
+    color: white;
+    margin-left: 9px;
+}
+
+#down{
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.retangulo{
+    background-color: white;
+    padding: 4px 15px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.retangulo i{
+    margin-right: 5px;
+}
+
+.sair{
+    font: 500 18px 'IBM', sans-serif;
+}
+
+.hover-retangulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-retangulo{
+    display: flex;
+    margin-left: 53px;
+    margin-top: 20px;
+}
+
+.esconder{
+    display: none;
+}
+
+.esconder.show {
+    display: block;
+}

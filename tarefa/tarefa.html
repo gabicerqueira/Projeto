@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarefas</title>
+    <title>Tarefas - TaskList</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="container">
-        <h1>Tarefas: </h1>
 
+<body>
+
+    <header>
+        <div class="menu">
+            <div class="user">
+                <div class="hover">
+                    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                    <p class="titulo-user">Usuário</p>
+                    <i class="fa-solid fa-chevron-down" style="color: #ffffff;" id="down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="esconder">
+            <div class="user-retangulo">
+                <div class="retangulo">
+                    <p class="sair"><i class="fa-solid fa-right-from-bracket" style="color: #000000;"></i>Sair</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="header">
+        <div class="tasks">
+            <p class="titulo"><i class="fa-solid fa-list-check" style="color: #000000;"></i>Todas as minhas tarefas</p>
+        </div>
+    </div>
+
+    <div class="container">
         <form class="form">
             <input type="text" id="input" placeholder="Adicione uma tarefa">
             <button type="submit">Adicionar</button>
@@ -19,4 +48,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>

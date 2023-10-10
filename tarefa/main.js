@@ -4,11 +4,11 @@ const lista = document.getElementById('lista');
 
 let todas = []; //Array para armazenar as tarefas
 
-function listarTarefas(){
+function listarTarefas() {
     lista.innerHTML = ''; //Limpa a lista
 
     // Loop para as tarefas
-    for(let i = 0; i < todas.length; i++){
+    for (let i = 0; i < todas.length; i++) {
         const toda = todas[i]
 
         const li = document.createElement('li');
@@ -17,7 +17,7 @@ function listarTarefas(){
 
         span.innerHTML = toda; //Texto da tarefa no elemento span
         button.innerHTML = 'Apagar tarefa';
-        button.addEventListener('click', function(){
+        button.addEventListener('click', function () {
             todas.splice(i, 1);
             listarTarefas();
         })
@@ -30,12 +30,12 @@ function listarTarefas(){
     }
 }
 
-form.addEventListener('submit', function(event){
+form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     const texto = input.value.trim(); //Obtém o texto da tarefa e remove espaços extras
 
-    if(texto.length === 0){
+    if (texto.length === 0) {
         return; //Se tentar criar tarefa sem nada escrito, não vai
     }
 
@@ -44,3 +44,12 @@ form.addEventListener('submit', function(event){
     listarTarefas();
 })
 listarTarefas();
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hoverDiv = document.querySelector(".hover");
+    const esconderDiv = document.querySelector(".esconder");
+
+    hoverDiv.addEventListener("click", function () {
+        esconderDiv.classList.toggle("show");
+    });
+});

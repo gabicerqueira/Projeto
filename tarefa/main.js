@@ -53,3 +53,23 @@ document.addEventListener("DOMContentLoaded", function () {
         esconderDiv.classList.toggle("show");
     });
 });
+
+const userButton = document.getElementById('fa-user');
+const modal = document.getElementById('modal');
+const desfocado = document.getElementById('desfocado');
+const fechar = document.getElementById('fechar');
+
+userButton.addEventListener('click', () => {
+    modal.style.display = 'block';
+    desfocado.style.display = 'block';
+});
+
+fechar.addEventListener('click', () => {
+    modal.style.display = 'none';
+    desfocado.style.display = 'none';
+});
+
+desfocado.addEventListener('click', () => {
+    modal.style.display = 'none';
+    desfocado.style.display = 'none';
+});

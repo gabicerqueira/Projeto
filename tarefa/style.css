@@ -15,9 +15,24 @@
     src: url(fonts/IBMPlexMono-Bold.ttf);
 }
 
-body {
+@font-face {
+    font-family: 'Mulish';
+    src: url(fonts/Mulish-Regular.ttf);
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
     background: linear-gradient(to bottom right, #6352EC, #865BDF, #B967C9);
     background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso ajuda a manter o gradiente na posição */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
@@ -84,7 +99,7 @@ body {
     left: 6.8%;
     transform: translate(-50%);
     background-color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 2;
@@ -102,7 +117,7 @@ body {
 }
 
 span{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .desfocado {
@@ -117,7 +132,7 @@ span{
 }
 
 .sair-p{
-    font: 500 18px 'IBM', sans-serif;
+    font: 500 16px 'IBM', sans-serif;
     padding-right: 25px;
 }
 
@@ -131,8 +146,9 @@ a{
 }
 
 main{
-    margin: 40px 0;
+    margin: 60px 0;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -140,6 +156,61 @@ main{
 
 .container{
     background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px 30px;
+    width: 35%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container p{
+    font: 500 20px 'IBMBold', sans-serif;
+    text-align: center;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input{
+    font: 500 16px 'Mulish', sans-serif;
+    border: 2px solid rgb(177, 177, 177);
+    outline: 0;
+    padding: 8px 20px 8px 8px;
+}
+
+button{
+    margin-left: 5px;
+    padding: 0 16px;
+    background-color: #865BDF;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button i{
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+button:hover{
+    transform: scale(0.9);
+    background-color: #7342d4;
+}
+
+span{
+    font: 500 16px 'IBM', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    background-color: #c4baf0;
+    margin-top: 25px;
+    padding: 8px 20px 8px 8px;
 }

@@ -48,7 +48,7 @@ body {
 }
 
 .titulo{
-    font: 500 20px 'IBMBold', sans-serif;
+    font: 500 3.1vh 'IBMBold', sans-serif;
     padding: 5px 10px;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .titulo-user{
-    font: 500 20px 'IBM', sans-serif;
+    font: 500 3vh 'IBM', sans-serif;
     color: white;
     margin-left: 9px;
 }
@@ -157,8 +157,8 @@ main{
 .container{
     background-color: white;
     padding: 30px 30px;
-    width: 35%;
     border-radius: 20px;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,7 +173,6 @@ main .container p{
 form{
     margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
 }
 
 input{
@@ -210,7 +209,8 @@ ul{
 }
 
 li {
-    background-color: #c4baf0;
+    background-color: #ffffff;
     margin-top: 25px;
-    padding: 8px 20px 8px 8px;
+    padding: 12px;
 }
+

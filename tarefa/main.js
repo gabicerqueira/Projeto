@@ -16,7 +16,7 @@ function listarTarefas() {
         const button = document.createElement('button');
 
         span.innerHTML = toda; //Texto da tarefa no elemento span
-        button.innerHTML = 'Apagar tarefa';
+        button.innerHTML = '<i class="fas fa-trash" style="color: #c33232;"></i>';
         button.addEventListener('click', function () {
             todas.splice(i, 1);
             listarTarefas();

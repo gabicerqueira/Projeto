@@ -5,6 +5,7 @@ const lista = document.getElementById('lista');
 let todas = []; //Array para armazenar as tarefas
 
 function listarTarefas() {
+    const listaContainer = document.getElementById('container');
     lista.innerHTML = ''; //Limpa a lista
 
     // Loop para as tarefas
@@ -16,10 +17,12 @@ function listarTarefas() {
         const button = document.createElement('button');
 
         span.innerHTML = toda; //Texto da tarefa no elemento span
-        button.innerHTML = '<i class="fas fa-trash" style="color: #c33232;"></i>';
+        button.innerHTML = '<i class="fas fa-trash" style="color: #000;"></i>';
         button.addEventListener('click', function () {
+            li.classList.add('slide-out');
+            setTimeout(() => {
             todas.splice(i, 1);
-            listarTarefas();
+            listarTarefas();}, 500);
         })
 
         // Adiciona o span e o botão ao elemento lista
@@ -27,6 +30,15 @@ function listarTarefas() {
         li.appendChild(button);
 
         lista.appendChild(li);
+
+        li.addEventListener('animationend', function (e) {
+            if (e.animationName === 'slide-out') {
+                // Verifique se o elemento está fora da div container
+                if (!listaContainer.contains(li)) {
+                    li.style.display = 'none';
+                }
+            }
+        });
     }
 }
 
@@ -46,30 +58,12 @@ form.addEventListener('submit', function (event) {
 listarTarefas();
 
 document.addEventListener("DOMContentLoaded", function () {
-    const hoverDiv = document.querySelector(".hover");
-    const esconderDiv = document.querySelector(".esconder");
+    const sairDiv = document.querySelector("#fa-user");
 
-    hoverDiv.addEventListener("click", function () {
-        esconderDiv.classList.toggle("show");
-    });
-});
-
-const userButton = document.getElementById('fa-user');
-const modal = document.getElementById('modal');
-const desfocado = document.getElementById('desfocado');
-const fechar = document.getElementById('fechar');
-
-userButton.addEventListener('click', () => {
-    modal.style.display = 'block';
-    desfocado.style.display = 'block';
-});
-
-fechar.addEventListener('click', () => {
-    modal.style.display = 'none';
-    desfocado.style.display = 'none';
-});
-
-desfocado.addEventListener('click', () => {
-    modal.style.display = 'none';
-    desfocado.style.display = 'none';
+    if (sairDiv) {
+        sairDiv.addEventListener("click", function () {
+            // Redireciona para a página desejada
+            window.location.href = "/login/index.html";
+        });
+    }
 });

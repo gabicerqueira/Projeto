@@ -17,7 +17,7 @@ function listarTarefas() {
         const button = document.createElement('button');
 
         span.innerHTML = toda; //Texto da tarefa no elemento span
-        button.innerHTML = '<i class="fas fa-trash" style="color: #000;"></i>';
+        button.innerHTML = '<i class="fas fa-trash" style="color: #FFF;"></i>';
         button.addEventListener('click', function () {
             li.classList.add('slide-out');
             setTimeout(() => {

@@ -38,11 +38,12 @@ body {
 .header{
     display: flex;
     justify-content: center;
+    padding: 0 30px;
 }
 
 .tasks{
     background-color: white;
-    padding: 5px;
+    padding: 5px 10px;
     margin-top: 50px;
     border-radius: 10rem;
 }
@@ -164,13 +165,14 @@ main{
 }
 
 main .container p{
-    font: 500 20px 'IBMBold', sans-serif;
+    font: 500 3.2vh 'IBMBold', sans-serif;
     text-align: center;
 }
 
 form{
     margin-top: 20px;
     display: flex;
+    padding: 0 20px;
 }
 
 input{
@@ -201,7 +203,8 @@ form button:hover{
 }
 
 span{
-    font: 500 18px 'IBM', sans-serif;
+    font: 500 2.5vh 'IBM', sans-serif;
+    color: white;
 }
 
 ul{
@@ -209,7 +212,7 @@ ul{
 }
 
 li {
-    background-color: #ccb4f1;
+    background-color: #985be3;
     margin-top: 18px;
     padding: 12px;
     display: flex;
